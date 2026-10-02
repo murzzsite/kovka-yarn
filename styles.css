@@ -366,3 +366,12 @@ h1, h2, h3, .faq__item summary, .tariff__name { text-wrap: balance; }
   .videos { grid-template-columns: 1fr; }
   .srv-grid { grid-template-columns: 1fr; }
 }
+
+/* Правки: ориентиры цен */
+.tariffs--5 { grid-template-columns: repeat(5, 1fr); gap: 14px; }
+.tariffs--5 .tariff { padding: 22px 18px; }
+.tariffs--5 .tariff__name { font-size: 22px; }
+.tariffs--5 .tariff__price { font-size: 28px; margin-bottom: 0; }
+@media (max-width: 1100px) { .tariffs--5 { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 900px) { .tariffs--5 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .tariffs--5 { grid-template-columns: 1fr; } }
